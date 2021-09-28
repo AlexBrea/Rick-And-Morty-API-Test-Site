@@ -12,6 +12,8 @@ body {
 
 /* Card */
 .c-card {
+  margin: 0 auto;
+
   position: relative;
 
   overflow: hidden;
@@ -119,10 +121,18 @@ body {
 .c-banner {
   position: relative;
   
-  height: 600px;
+  height: 400px;
+  text-align: center;
 
   overflow: hidden;
 
+}
+
+@media( min-width: 769px ) {
+  .c-banner {  
+    text-align: initial;
+    height: 600px;
+  }
 }
 
 .c-banner::after {
@@ -178,4 +188,38 @@ body {
   background-color:#6847d4;
 
   color: #fff;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #282828;
+}
+.modal-header, .modal-footer {
+  border-color: #1f1f1f;
+}
+.btn-close {
+  color: #6847d4;
+}
+
+.c-modal__img img {
+  max-width: 250px;
+}
+
+.c-modal__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.c-modal__info p {
+  display: inline-block;
+}
+
+.c-modal__purple {
+  padding: .3rem;
+
+  border-radius: 5px;
+  border: 1px solid #6847d4;
+  
+  background-color:#6847d4;
 }

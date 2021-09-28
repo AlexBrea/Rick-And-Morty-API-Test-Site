@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rick And Morty Characters</title>
+  <title>Rick And Morty API Test Site</title>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +44,50 @@
 
     </div>
 
+    <!-- Modal with character info -->
+    <div class="modal fade" id="characterInformationModal" tabindex="-1" aria-labelledby="characterInformationModal" aria-hidden="true">
+      
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="c-modal__img text-center mb-3">
+              <img class="rounded-pill js-modal-character-image" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez" class="js-modal-character-img">
+            </div>
+
+            <div class="c-modal__content">
+              
+              <h2 class="c-modal__name js-modal-character-name mb-3">Rick Sanchez</h2>
+              
+              <div class="c-modal__info">
+                <p class="c-modal__purple js-modal-character-species">Human</p>
+                <!-- <p class="c-modal__purple js-modal-character-status">Alive</p> -->
+                <p class="c-modal__purple js-modal-character-gender">Male</p>
+                <p class="c-modal__purple js-modal-character-origin">Earch (C-137)</p>
+                <p class="c-modal__purple js-modal-character-location">Earth (Replacement Dimension)</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
   </main>
   
 </body>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <!-- Main JS -->
 <script src="assets/js/main.js"></script>
 
