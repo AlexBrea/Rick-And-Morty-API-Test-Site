@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick And Morty Characters</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="vendor/css/bootstrap.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+  <main class="c-main">
+    
+    <div class="c-banner mb-5">
+      <img src="assets/img/banner.jpg" alt="" class="c-banner__img">
+      
+      <div class="container">
+        <div class="c-banner__content">
+          <h1>Rick And Morty With API</h1>
+          <p>Welcome to this simple project where, using the Rick & Morty API, I show all the characters, with a button in charge of loading more characters and the functionality of, when clicking on a character, loading a modal with all its information.</p>
+          <p>This project has been created in order to better understand how it works in asynchronism, promises, Async / Await and fetch.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <div class="container mb-5">
+      
+      <div id="root" class="row card-container js-card-container"></div>  
+      <div class="d-grid gap-2">
+        <button class="btn btn-purple js-load-more-btn" onclick="loadMore( this.getAttribute( 'data-next-page' ) )" data-next-page="1" type="button">Load more</button>
+      </div>
+
+    </div>
+
+  </main>
+  
+</body>
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+</html>
