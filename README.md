@@ -8,7 +8,7 @@ This project has been created in order to better understand how it work.
 
 You can copy, distribute and modify the content of this repository if you wish, as long as it is for educational purposes and not for sale or distribution.
 
-##Technologies ##
+## Technologies ##
 
 The following tools were used in this project:
 
